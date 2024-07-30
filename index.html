@@ -1,0 +1,311 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Netflix</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    @font-face {
+      font-family: 'monica-ext-font_YIBBBFG';
+      src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Light.otf');
+      font-weight: 300;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'monica-ext-font_YIBBBFG';
+      src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Regular.otf');
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'monica-ext-font_YIBBBFG';
+      src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Medium.otf');
+      font-weight: 500;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'monica-ext-font_YIBBBFG';
+      src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-SemiBold.otf');
+      font-weight: 600;
+      font-display: swap;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="nav">
+    <div class="nav__left">
+      <div class="logo">
+        <a href="index.html">
+          <img class="nav_logo" src="Assets/Logonetflix.png" alt="">
+        </a>
+      </div>
+      <div class="mid_content">
+        <a href="#">Home</a>
+        <a href="#Movies">TV Shows</a>
+        <a href="#Movies">Movies</a>
+        <a href="#Movies">New & Popular</a>
+        <a href="#Movies">My List</a>
+      </div>
+    </div>
+    <div class="nav__right">
+
+      <div class="search">
+        <input type="text" name="text" class="input" required="" placeholder="Type to search...">
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <div class="avtar">
+        <img src="Assets/avatar.avif" class="nav_avatar" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- banner -->
+  <header id="banner"
+    style="background-image: url(&quot;https://image.tmdb.org/t/p/original/p4rJTY1rvQrffoh2P09sty5cz8B.jpg&quot;);">
+    <div id="banner__contents">
+      <h1 id="banner__title">Parasyte: The Grey</h1>
+      <div id="banner__buttons">
+        <button id="banner__button">Play</button>
+        <button id="banner__button">My List</button>
+      </div>
+      <p id="banner__description">When unidentified parasites violently take over human hosts and gain power, humanity
+        must rise to combat the growing threat.</p>
+    </div>
+    <div id="banner__fadeBottom"></div>
+  </header>
+
+  <!-- row -->
+  <div id="headrow">
+    <div class="row">
+      <h2 class="row__title"></h2>
+      <div class="row__posters"> </div>
+    </div>
+
+    <!-- Top Rated -->
+
+    <div class="row">
+      <h2 class="row__title">Top Rated</h2>
+      <div class="row__posters">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/ykZ7hlShkdRQaL2aiieXdEMmrLb.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/f7QBvIzoWSJw3jWPGnZBc5vwQ0l.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/AnsSKR9LuK0T9bAOcPVA3PUvyWj.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/rubaKfmdCvWGPXErgW9aQsgzKVr.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/tMefBSflR6PGQLv7WvFPpKLZkyk.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/bXi6IQiQDHD00JFio5ZSZOeRSBh.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/9AETcs8QKNkWFdRObhHHaAUOfne.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/jQb1ztdko9qc4aCdnMXShcIHXRG.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/6faYaQyiBPhqAizldJKq21mIVaE.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/cIzk6GhxEZuweekGFXWEoAyuaMX.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/ywbacot78IuNhGW4uVZPxxxVTkm.jpg">
+        <img class="row__posterLarge" src="https://image.tmdb.org/t/p/w300/AgHbB9DCE9aE57zkHjSmseszh6e.jpg">
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- NETFLIX ORIGINALS -->
+
+  <div class="row netflixrow">
+    <h2 class="row__title">NETFLIX ORIGINALS</h2>
+    <div class="row__posters">
+      <img class="row__posterLarge" id="StarWars:TheCloneWars"
+        src="https://image.tmdb.org/t/p/w300/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg">
+      <img class="row__posterLarge" id="OrangeIstheNewBlack"
+        src="https://image.tmdb.org/t/p/w300/ekaa7YjGPTkFLcPhwWXTnARuCEU.jpg">
+      <img class="row__posterLarge" id="ComediansinCarsGettingCoffee"
+        src="https://image.tmdb.org/t/p/w300/hpK5MsFa7k7RQdClvRglBo0wAoT.jpg">
+      <img class="row__posterLarge" id="Lucifer" src="https://image.tmdb.org/t/p/w300/ekZobS8isE6mA53RAiGDG93hBxL.jpg">
+      <img class="row__posterLarge" id="HouseofCards"
+        src="https://image.tmdb.org/t/p/w300/hKWxWjFwnMvkWQawbhvC0Y7ygQ8.jpg">
+      <img class="row__posterLarge" id="BlackMirror"
+        src="https://image.tmdb.org/t/p/w300/5UaYsGZOFhjFDwQh6GuLjjA1WlF.jpg">
+      <img class="row__posterLarge" id="DawnoftheCroods"
+        src="https://image.tmdb.org/t/p/w300/cyCAsMLGECvEAFDfKcxcWy7YTOW.jpg">
+      <img class="row__posterLarge" id="TheAdventuresofPussinBoots"
+        src="https://image.tmdb.org/t/p/w300/uHpUlyWCqXXUDY7zekQdJmf6QkP.jpg">
+      <img class="row__posterLarge" id="3BodyProblem"
+        src="https://image.tmdb.org/t/p/w300/ykZ7hlShkdRQaL2aiieXdEMmrLb.jpg">
+      <img class="row__posterLarge" id="Marvel'sJessicaJones"
+        src="https://image.tmdb.org/t/p/w300/lwPFyjxAZY6NqHxywgY00Y4MFBx.jpg">
+      <img class="row__posterLarge" id="GraceandFrankie"
+        src="https://image.tmdb.org/t/p/w300/b0ldaLD1rSqg5DMxHBkNFAYIUQP.jpg">
+      <img class="row__posterLarge" id="Dragons:RacetotheEdge"
+        src="https://image.tmdb.org/t/p/w300/y5sNfaTvWR3ObILyf9uV6deAcKT.jpg">
+      <img class="row__posterLarge" id="Voltron:LegendaryDefender"
+        src="https://image.tmdb.org/t/p/w300/uoqfxbyDILRYwi0CP4yRqVCQkPW.jpg">
+      <img class="row__posterLarge" id="UnbreakableKimmySchmidt"
+        src="https://image.tmdb.org/t/p/w300/eMFHl0HyLg7k04OVeE4xPvT6XhY.jpg">
+      <img class="row__posterLarge" id="Marvel'sDaredevil"
+        src="https://image.tmdb.org/t/p/w300/QWbPaDxiB6LW2LjASknzYBvjMj.jpg">
+      <img class="row__posterLarge" id="Love,Death&amp;Robots"
+        src="https://image.tmdb.org/t/p/w300/asDqvkE66EegtKJJXIRhBJPxscr.jpg">
+      <img class="row__posterLarge" id="Parasyte:TheGrey"
+        src="https://image.tmdb.org/t/p/w300/rubaKfmdCvWGPXErgW9aQsgzKVr.jpg">
+      <img class="row__posterLarge" id="She-RaandthePrincessesofPower"
+        src="https://image.tmdb.org/t/p/w300/o2yXOaHIDivBgX2rskW7yrN8pKk.jpg">
+      <img class="row__posterLarge" id="Bakugan" src="https://image.tmdb.org/t/p/w300/go2IfyqSK7YJ403tvugctEQgjxQ.jpg">
+      <img class="row__posterLarge" id="TheCrown" src="https://image.tmdb.org/t/p/w300/1M876KPjulVwppEpldhdc8V4o68.jpg">
+    </div>
+  </div>
+
+
+  <!-- Horror Movies -->
+
+  <div class="row" id="Movies">
+    <h2 class="row__title">Horror Movies</h2>
+    <div class="row__posters"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/mIBG74mhGEJnBubhYLkCtvplcNr.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/bWIIWhnaoWx3FTVXv6GkYDv3djL.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/b4xaqpUZFUkgyJ1VcFEPXmDML34.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/s9YTxwaByYeoSqugYjJJtZjMRAG.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/aINel9503ompOlGKn4sIVMg09Un.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/ruKNVJFViAyR4jguVboFXTskMOe.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/o8SOOunRPKvDbiZcSVII0aexIuB.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/eKYIX3NpIqAoVxl3FFpZjEsrMuw.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/pDKFL1zcHzEpmz4MJA5JJnRbJeD.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/70Rm9ItxKuEKN8iu6rNjfwAYUCJ.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/hdHIjZxq3SWFqpAz4NFhdbud0iz.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/UHWLXmTR4YbzhXyI2wx4hhHg78.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/vLvKc1x7bDXV5N7RnGCnZRBng3q.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/lmDBCAFJjXQwU7kDYbdN2pV9sAV.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/7NRGAtu8E4343NSKwhkgmVRDINw.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/9pkZesKMnblFfKxEhQx45YQ2kIe.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/5mzr6JZbrqnqD8rCEvPhuCE5Fw2.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/sKdDC38FHuPvEsRgIzMEQE6ydol.jpg"></div>
+  </div>
+
+  <!-- Documentaries -->
+
+  <div class="row">
+    <h2 class="row__title">Documentaries</h2>
+    <div class="row__posters"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/l6trIrFvJbQIvHYpaFCKuwqLUbS.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/o3HA6hzzsvgxWJeypyDpnBoG9R8.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300null"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/pF0LGTwMbteQV6PFL4AquYsUAZD.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/YP6FhLBnw8gwFb5RmL9i1Exm2c.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/8rft8A9nH43IReybFtYt21ezfMK.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/vRedekrx2Lof4b4srkJfgrd0Edr.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/qIM5iwCjg3qnYnIeix2UDbmZg3V.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/rfYtZXPKWR5KZ13ArE9VUET605L.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/qd09px0NYGVneO0I2ZFi0yJSqA6.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/tU3mnpFLOAp2Ia6vHvGIw8ewJQb.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/ifGs4hSnqTCFmhJqCGe5Ec0cTe5.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/2VFUh8spzyNbRNPyncIrFmSwBrd.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/986n9SAXsuxpPJzFAWK3azPknX0.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/bV7eAcBrYb57PwjpQ2ODT6VyFPd.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/fh022Zgyoq1UzxshTObNLjQ2JoC.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/eozhgdjWK0ukvwhj8nEY6ZtqQZ1.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/3Sq9c1Lxh75neQ2BC9thaTO74FZ.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/3gw6ZMxVbfOQcQahGsmwdvFJPOa.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/hY97iRKr2t44lbX2GHRhfK5CVC7.jpg"></div>
+  </div>
+
+  <!-- Comedy Movies -->
+
+  <h2 class="row">Comedy Movies</h2>
+    <div class="row__posters"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/1XDDXPXGiI8id7MrUxK36ke7gkX.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/2KGxQFV9Wp1MshPBf8BuqWUgVAz.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/xvk5AhfhgQcTuaCQyq3XqAnhEma.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/bQS43HSLZzMjZkcHJz4fGc7fNdz.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/yyFc8Iclt2jxPmLztbP617xXllT.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/rNP32TLwnUky6uuUyCIDatGCd6x.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/3Kzc6V4MWs3RXCmE5DhAYnfWL8F.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/nTPFkLUARmo1bYHfkfdNpRKgEOs.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/qSc5JzPvSm6KxVv54nrn7SNXFtk.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/3IoSYT0gnuImnZ73rqYySJnmefA.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/tTfnd2VrlaZJSBD9HUbtSF3CqPJ.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/zCViszfnUOCJBTCTr9YN1VWvqnn.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/s9YTxwaByYeoSqugYjJJtZjMRAG.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/pofZLIwFSpIuU223mrEZAaSPOcx.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/6SLyu9ygASsrOqkCpjAwtyG9PWW.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/6YInbRTk39ckuLYFmUgBCKcKNjb.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/w4I5CX8pbVX4lixASIQGZaVcuNn.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/r9oTasGQofvkQY5vlUXglneF64Z.jpg"><img class="row__poster"
+        src="https://image.tmdb.org/t/p/w300/d1RHScaZc7I8j0lDke1c4AxI435.jpg"></div>
+  </div>
+
+  <!-- Action Movies -->
+
+  <div class="row">
+    <h2 class="row__title">Action Movies</h2>
+    <div class="row__posters">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/1XDDXPXGiI8id7MrUxK36ke7gkX.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/j3Z3XktmWB1VhsS8iXNcrR86PXi.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/qekky2LbtT1wtbD5MDgQvjfZQ24.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/oe7mWkvYhK4PLRNAVSvonzyUXNy.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/9c0lHTXRqDBxeOToVzRu0GArSne.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/pwGmXVKUgKN13psUjlhC9zBcq1o.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/7ZP8HtgOIDaBs12krXgUIygqEsy.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/wUp0bUXaveR40ikBhDgWwNTijuD.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/2KGxQFV9Wp1MshPBf8BuqWUgVAz.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/2C3CdVzINUm5Cm1lrbT2uiRstwX.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/rKmp0vm6PNaFA0g1bzM70eyWJ6I.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/xg4BiG7tV6nl8VG9nsSdh3jype.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/deLWkOLZmBNkm8p16igfapQyqeq.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/iqqMJwvPlovftBfdHVrpP2B1IxE.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/4woSOUD0equAYzvwhWBHIJDCM88.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/oBIQDKcqNxKckjugtmzpIIOgoc4.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/xvk5AhfhgQcTuaCQyq3XqAnhEma.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/oFAukXiMPrwLpbulGmB5suEZlrm.jpg">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w300/bWIIWhnaoWx3FTVXv6GkYDv3djL.jpg">
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+
+  <div class="footer">
+    <footer>
+
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+      </div>
+
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Netflix, Inc. All rights reserved.</p>
+        <p>Netflix is a registered trademark of Netflix, Inc.</p>
+        <p>Powered by Netflix, Inc.</p>
+      </div>
+
+    </footer>
+  </div>
+
+
+
+
+</body>
+
+</html>
